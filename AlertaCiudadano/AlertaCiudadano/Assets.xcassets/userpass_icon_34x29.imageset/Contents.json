@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "userpass_icon_34x29.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
