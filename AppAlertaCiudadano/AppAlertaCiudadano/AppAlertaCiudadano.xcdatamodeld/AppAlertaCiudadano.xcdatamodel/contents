@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Reporte" representedClassName="Reporte" syncable="YES" codeGenerationType="class">
+        <attribute name="armas" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="asunto" optional="YES" attributeType="String"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="factor" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="personas" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tipoArma" optional="YES" attributeType="String"/>
+        <relationship name="relationToUbicaciones" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ubicacion" inverseName="relationToReporte" inverseEntity="Ubicacion"/>
+    </entity>
+    <entity name="Ubicacion" representedClassName="Ubicacion" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id_reporte" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="relationToReporte" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reporte" inverseName="relationToUbicaciones" inverseEntity="Reporte"/>
+    </entity>
+    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
+        <attribute name="apellidos" optional="YES" attributeType="String"/>
+        <attribute name="celular" optional="YES" attributeType="String"/>
+        <attribute name="dni" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nombres" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Reporte" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Usuario" positionX="-322" positionY="-47" width="128" height="134"/>
+        <element name="Ubicacion" positionX="-484" positionY="99" width="128" height="118"/>
+    </elements>
+</model>

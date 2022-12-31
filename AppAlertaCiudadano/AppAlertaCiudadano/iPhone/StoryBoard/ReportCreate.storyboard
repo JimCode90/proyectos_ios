@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report Create View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ReportCreateViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ReportCreateViewController" customModule="AppAlertaCiudadano" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGZ-VX-gjw">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-e1-u1B">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="sqB-Us-wER"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear Reporte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-bs-XL8">
+                                        <rect key="frame" x="27" y="20" width="336" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhc-9v-t8I">
+                                        <rect key="frame" x="27" y="80" width="336" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Asunto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qh-bS-5Ar">
+                                                <rect key="frame" x="22" y="7" width="292" height="33"/>
+                                                <color key="backgroundColor" name="PlomoInputs"/>
+                                                <color key="tintColor" name="PlomoPlaceholder"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KaW-v3-Ret"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="PlomoInputs"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2qh-bS-5Ar" secondAttribute="trailing" constant="22" id="Bnp-hj-aeW"/>
+                                            <constraint firstItem="2qh-bS-5Ar" firstAttribute="leading" secondItem="Lhc-9v-t8I" secondAttribute="leading" constant="22" id="SPx-ao-pxq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="Lhc-9v-t8I" secondAttribute="height" id="YTZ-UM-BO1"/>
+                                            <constraint firstAttribute="bottom" secondItem="2qh-bS-5Ar" secondAttribute="bottom" constant="7" id="bio-jj-T60"/>
+                                            <constraint firstAttribute="height" constant="47" id="qy3-CA-F0f"/>
+                                            <constraint firstItem="2qh-bS-5Ar" firstAttribute="top" secondItem="Lhc-9v-t8I" secondAttribute="top" constant="7" id="u7Z-wl-qcL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rti-uX-I8f">
+                                        <rect key="frame" x="27" y="145" width="336" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9CD-8S-qam">
+                                                <rect key="frame" x="22" y="7" width="292" height="33"/>
+                                                <color key="backgroundColor" name="PlomoInputs"/>
+                                                <color key="tintColor" name="PlomoPlaceholder"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="MCu-aK-c1k"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="PlomoInputs"/>
+                                        <constraints>
+                                            <constraint firstItem="9CD-8S-qam" firstAttribute="top" secondItem="Rti-uX-I8f" secondAttribute="top" constant="7" id="6Fi-UA-hsw"/>
+                                            <constraint firstItem="9CD-8S-qam" firstAttribute="leading" secondItem="Rti-uX-I8f" secondAttribute="leading" constant="22" id="Fds-tK-X8H"/>
+                                            <constraint firstAttribute="trailing" secondItem="9CD-8S-qam" secondAttribute="trailing" constant="22" id="i5g-Ho-d5V"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="Rti-uX-I8f" secondAttribute="height" id="lLJ-pa-1VK"/>
+                                            <constraint firstAttribute="bottom" secondItem="9CD-8S-qam" secondAttribute="bottom" constant="7" id="nXa-3F-qW6"/>
+                                            <constraint firstAttribute="height" constant="47" id="ta4-wB-bY0"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-Pu-a3R">
+                                        <rect key="frame" x="50" y="647" width="290" height="46"/>
+                                        <color key="backgroundColor" name="VerdeBotones"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="5Wb-1v-0Iu"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
+                                        <connections>
+                                            <action selector="actionAgregarReporte:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5oc-cN-4XJ"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-4p-SL0">
+                                        <rect key="frame" x="27" y="210" width="336" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cantidad personas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opr-YP-qzi">
+                                                <rect key="frame" x="22" y="7" width="292" height="33"/>
+                                                <color key="backgroundColor" name="PlomoInputs"/>
+                                                <color key="tintColor" name="PlomoPlaceholder"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="flight-number"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Fcp-c7-ShT"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="PlomoInputs"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Opr-YP-qzi" secondAttribute="bottom" constant="7" id="Epi-pn-I6O"/>
+                                            <constraint firstAttribute="height" constant="47" id="JgC-Gr-CcJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Opr-YP-qzi" secondAttribute="trailing" constant="22" id="XoG-AC-rBV"/>
+                                            <constraint firstItem="Opr-YP-qzi" firstAttribute="leading" secondItem="Po1-4p-SL0" secondAttribute="leading" constant="22" id="aYk-Ha-IZG"/>
+                                            <constraint firstItem="Opr-YP-qzi" firstAttribute="top" secondItem="Po1-4p-SL0" secondAttribute="top" constant="7" id="ltu-Pd-z94"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="Po1-4p-SL0" secondAttribute="height" id="rWq-wh-2k3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPG-am-gbZ">
+                                        <rect key="frame" x="27" y="275" width="336" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-kW-fjh">
+                                                <rect key="frame" x="10" y="10" width="316" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="isTappedFactorDropdownButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SHe-HR-XQw"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione factor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-bB-K8b">
+                                                <rect key="frame" x="22" y="15" width="113" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="PlomoPlaceholder"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RXp-ey-tpf">
+                                                <rect key="frame" x="306" y="16.000000000000018" width="20" height="15.333333333333332"/>
+                                                <color key="tintColor" name="PlomoPlaceholder"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Rjr-hq-Fx2"/>
+                                                    <constraint firstAttribute="width" constant="20" id="SAf-O7-Dmp"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="PlomoInputs"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="r5S-kW-fjh" secondAttribute="trailing" constant="10" id="8Oc-yd-xst"/>
+                                            <constraint firstItem="RXp-ey-tpf" firstAttribute="centerY" secondItem="YKq-bB-K8b" secondAttribute="centerY" id="B5w-TW-HMO"/>
+                                            <constraint firstItem="r5S-kW-fjh" firstAttribute="leading" secondItem="zPG-am-gbZ" secondAttribute="leading" constant="10" id="Hqo-ye-yok"/>
+                                            <constraint firstItem="YKq-bB-K8b" firstAttribute="leading" secondItem="zPG-am-gbZ" secondAttribute="leading" constant="22" id="XKa-Jw-siY"/>
+                                            <constraint firstItem="r5S-kW-fjh" firstAttribute="top" secondItem="zPG-am-gbZ" secondAttribute="top" constant="10" id="Ynf-RM-1n6"/>
+                                            <constraint firstAttribute="trailing" secondItem="RXp-ey-tpf" secondAttribute="trailing" constant="10" id="jZ8-Ym-lFz"/>
+                                            <constraint firstAttribute="height" constant="47" id="lz5-l7-4Nt"/>
+                                            <constraint firstItem="YKq-bB-K8b" firstAttribute="top" secondItem="zPG-am-gbZ" secondAttribute="top" constant="15" id="z5z-Fa-Nek"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5i-7C-Scp">
+                                        <rect key="frame" x="27" y="340" width="336" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Hubo armas?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FY-ER-1iT">
+                                                <rect key="frame" x="22.000000000000007" y="15" width="92.666666666666686" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="PlomoPlaceholder"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4G-Km-SbU">
+                                                <rect key="frame" x="290" y="11" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="A5j-Xk-AyP"/>
+                                                    <constraint firstAttribute="height" constant="24" id="zMq-Wg-dW8"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="uncheck"/>
+                                                <state key="selected" image="check"/>
+                                                <connections>
+                                                    <action selector="checkboxBtnArmas:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sfS-Kq-yA5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="PlomoInputs"/>
+                                        <constraints>
+                                            <constraint firstItem="7FY-ER-1iT" firstAttribute="top" secondItem="x5i-7C-Scp" secondAttribute="top" constant="15" id="e3V-yg-4Da"/>
+                                            <constraint firstAttribute="trailing" secondItem="V4G-Km-SbU" secondAttribute="trailing" constant="22" id="iYL-Tm-P5m"/>
+                                            <constraint firstAttribute="height" constant="47" id="m1B-86-gt2"/>
+                                            <constraint firstItem="V4G-Km-SbU" firstAttribute="top" secondItem="x5i-7C-Scp" secondAttribute="top" constant="11" id="rrt-nr-6nS"/>
+                                            <constraint firstItem="7FY-ER-1iT" firstAttribute="leading" secondItem="x5i-7C-Scp" secondAttribute="leading" constant="22" id="sVj-rt-X2d"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué tipo de arma?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-P9-efP">
+                                        <rect key="frame" x="20" y="405" width="350" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="PlomoPlaceholder"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oid-7u-7Wq">
+                                        <rect key="frame" x="27" y="440" width="336" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-ap-FPs">
+                                                <rect key="frame" x="22" y="11" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="8q2-wj-otT"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="NWn-3u-lRX"/>
+                                                    <constraint firstAttribute="width" constant="24" id="bbZ-KX-hQP"/>
+                                                    <constraint firstAttribute="height" constant="24" id="o9h-LF-mce"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="uncheck"/>
+                                                <state key="selected" image="check"/>
+                                                <connections>
+                                                    <action selector="checkboxBtnTipoArma1:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DDN-ws-VCE"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arma Blanca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-9d-TBT">
+                                                <rect key="frame" x="66" y="15" width="250" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="PlomoPlaceholder"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="y9L-ap-FPs" firstAttribute="leading" secondItem="oid-7u-7Wq" secondAttribute="leading" constant="22" id="13K-6S-YOn"/>
+                                            <constraint firstItem="vFt-9d-TBT" firstAttribute="top" secondItem="oid-7u-7Wq" secondAttribute="top" constant="15" id="5nf-p9-Wpv"/>
+                                            <constraint firstAttribute="trailing" secondItem="vFt-9d-TBT" secondAttribute="trailing" constant="20" id="LWc-pf-2j7"/>
+                                            <constraint firstAttribute="bottom" secondItem="vFt-9d-TBT" secondAttribute="bottom" constant="15" id="T80-jO-qo1"/>
+                                            <constraint firstItem="vFt-9d-TBT" firstAttribute="leading" secondItem="y9L-ap-FPs" secondAttribute="trailing" constant="20" id="aOM-kJ-5oG"/>
+                                            <constraint firstItem="y9L-ap-FPs" firstAttribute="top" secondItem="oid-7u-7Wq" secondAttribute="top" constant="11" id="tBP-ux-h0G"/>
+                                            <constraint firstAttribute="height" constant="47" id="tqG-gM-VfC"/>
+                                        </constraints>
+                                    </view>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fal-Bf-nM2">
+                                        <rect key="frame" x="27" y="492" width="336" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-O2-yLh">
+                                                <rect key="frame" x="22" y="11" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="KRm-nK-9AU"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="daT-bx-EK5"/>
+                                                    <constraint firstAttribute="width" constant="24" id="k4K-N9-aai"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="uzd-5v-OvY"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="uncheck"/>
+                                                <state key="selected" image="check"/>
+                                                <connections>
+                                                    <action selector="checkboxBtnTipoArma2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eE7-wb-lNu"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arma de fuego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQx-YW-PXA">
+                                                <rect key="frame" x="66" y="15" width="250" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="PlomoPlaceholder"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mQx-YW-PXA" secondAttribute="trailing" constant="20" id="EQN-bG-1WI"/>
+                                            <constraint firstItem="F8w-O2-yLh" firstAttribute="top" secondItem="fal-Bf-nM2" secondAttribute="top" constant="11" id="Pdg-q4-ohc"/>
+                                            <constraint firstAttribute="bottom" secondItem="mQx-YW-PXA" secondAttribute="bottom" constant="15" id="RgO-0H-4WX"/>
+                                            <constraint firstItem="F8w-O2-yLh" firstAttribute="leading" secondItem="fal-Bf-nM2" secondAttribute="leading" constant="22" id="eeA-wS-ZZJ"/>
+                                            <constraint firstAttribute="height" constant="47" id="h3z-Ig-V6w"/>
+                                            <constraint firstItem="mQx-YW-PXA" firstAttribute="top" secondItem="fal-Bf-nM2" secondAttribute="top" constant="15" id="jB3-fM-pKi"/>
+                                            <constraint firstItem="mQx-YW-PXA" firstAttribute="leading" secondItem="F8w-O2-yLh" secondAttribute="trailing" constant="20" id="vHJ-05-cbh"/>
+                                        </constraints>
+                                    </view>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsd-fX-frf">
+                                        <rect key="frame" x="27" y="544" width="336" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6t-FA-Hbo">
+                                                <rect key="frame" x="22" y="11" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="B7F-N6-vFM"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="QUT-bu-hlG"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="hg6-gE-hmU"/>
+                                                    <constraint firstAttribute="width" constant="24" id="mGG-Oj-3eP"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="uncheck"/>
+                                                <state key="selected" image="check"/>
+                                                <connections>
+                                                    <action selector="checkboxBtnTipoArma3:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mbv-LC-ecu"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDH-xY-AV0">
+                                                <rect key="frame" x="66" y="15" width="250" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="PlomoPlaceholder"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Describa..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niQ-Dn-Fwg">
+                                                <rect key="frame" x="22" y="45" width="292" height="35"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="PlomoPlaceholder"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="1AD-MA-EX0"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="niQ-Dn-Fwg" firstAttribute="top" secondItem="t6t-FA-Hbo" secondAttribute="bottom" constant="10" id="0po-Q8-uzL"/>
+                                            <constraint firstItem="t6t-FA-Hbo" firstAttribute="top" secondItem="xsd-fX-frf" secondAttribute="top" constant="11" id="482-dg-XAw"/>
+                                            <constraint firstAttribute="trailing" secondItem="niQ-Dn-Fwg" secondAttribute="trailing" constant="22" id="FUC-er-HBi"/>
+                                            <constraint firstItem="niQ-Dn-Fwg" firstAttribute="leading" secondItem="xsd-fX-frf" secondAttribute="leading" constant="22" id="Kr5-fs-bd8"/>
+                                            <constraint firstAttribute="height" constant="85" id="RVS-df-So0"/>
+                                            <constraint firstItem="zDH-xY-AV0" firstAttribute="leading" secondItem="t6t-FA-Hbo" secondAttribute="trailing" constant="20" id="Ua2-EM-eGh"/>
+                                            <constraint firstItem="zDH-xY-AV0" firstAttribute="top" secondItem="xsd-fX-frf" secondAttribute="top" constant="15" id="bWf-Q8-dEw"/>
+                                            <constraint firstItem="t6t-FA-Hbo" firstAttribute="leading" secondItem="xsd-fX-frf" secondAttribute="leading" constant="22" id="orz-5t-c7u"/>
+                                            <constraint firstAttribute="trailing" secondItem="zDH-xY-AV0" secondAttribute="trailing" constant="20" id="qye-Ta-Gsq"/>
+                                            <constraint firstAttribute="bottom" secondItem="niQ-Dn-Fwg" secondAttribute="bottom" constant="5" id="sMy-qV-ZS2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lhc-9v-t8I" firstAttribute="top" secondItem="bV2-bs-XL8" secondAttribute="bottom" constant="18" id="05K-TC-gfC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lhc-9v-t8I" secondAttribute="trailing" constant="27" id="75y-kk-iuV"/>
+                                    <constraint firstItem="zPG-am-gbZ" firstAttribute="leading" secondItem="Po1-4p-SL0" secondAttribute="leading" id="85T-db-jQe"/>
+                                    <constraint firstItem="xsd-fX-frf" firstAttribute="trailing" secondItem="fal-Bf-nM2" secondAttribute="trailing" id="85j-PF-mpV"/>
+                                    <constraint firstItem="KOa-e1-u1B" firstAttribute="leading" secondItem="jGZ-VX-gjw" secondAttribute="leading" id="8D4-hu-UfE"/>
+                                    <constraint firstItem="fal-Bf-nM2" firstAttribute="leading" secondItem="oid-7u-7Wq" secondAttribute="leading" id="CDH-Wj-UPh"/>
+                                    <constraint firstItem="9Yd-P9-efP" firstAttribute="top" secondItem="x5i-7C-Scp" secondAttribute="bottom" constant="18" id="D1z-f7-Uat"/>
+                                    <constraint firstItem="x5i-7C-Scp" firstAttribute="leading" secondItem="zPG-am-gbZ" secondAttribute="leading" id="HOu-fG-W5W"/>
+                                    <constraint firstItem="Lhc-9v-t8I" firstAttribute="leading" secondItem="jGZ-VX-gjw" secondAttribute="leading" constant="27" id="JJa-oL-RDW"/>
+                                    <constraint firstItem="Rti-uX-I8f" firstAttribute="trailing" secondItem="Lhc-9v-t8I" secondAttribute="trailing" id="KQq-yZ-O8J"/>
+                                    <constraint firstItem="9Yd-P9-efP" firstAttribute="leading" secondItem="jGZ-VX-gjw" secondAttribute="leading" constant="20" id="Ke1-PR-ngJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bV2-bs-XL8" secondAttribute="trailing" constant="27" id="Kqf-uD-YNx"/>
+                                    <constraint firstItem="KOa-e1-u1B" firstAttribute="top" secondItem="jGZ-VX-gjw" secondAttribute="top" id="M2Y-7Z-bFB"/>
+                                    <constraint firstItem="zPG-am-gbZ" firstAttribute="top" secondItem="Po1-4p-SL0" secondAttribute="bottom" constant="18" id="MtW-kb-383"/>
+                                    <constraint firstItem="fal-Bf-nM2" firstAttribute="trailing" secondItem="oid-7u-7Wq" secondAttribute="trailing" id="V0N-IU-Bxa"/>
+                                    <constraint firstItem="Rti-uX-I8f" firstAttribute="top" secondItem="Lhc-9v-t8I" secondAttribute="bottom" constant="18" id="YdX-3X-eq2"/>
+                                    <constraint firstItem="bV2-bs-XL8" firstAttribute="leading" secondItem="jGZ-VX-gjw" secondAttribute="leading" constant="27" id="bAS-ny-mZA"/>
+                                    <constraint firstAttribute="trailing" secondItem="pLP-Pu-a3R" secondAttribute="trailing" constant="50" id="c1q-d7-yfY"/>
+                                    <constraint firstItem="oid-7u-7Wq" firstAttribute="top" secondItem="9Yd-P9-efP" secondAttribute="bottom" constant="18" id="dGW-hU-ESC"/>
+                                    <constraint firstItem="bV2-bs-XL8" firstAttribute="top" secondItem="KOa-e1-u1B" secondAttribute="bottom" constant="20" id="dbD-cU-B0W"/>
+                                    <constraint firstItem="pLP-Pu-a3R" firstAttribute="leading" secondItem="jGZ-VX-gjw" secondAttribute="leading" constant="50" id="dje-fM-59i"/>
+                                    <constraint firstItem="x5i-7C-Scp" firstAttribute="trailing" secondItem="zPG-am-gbZ" secondAttribute="trailing" id="eDu-1g-JbR"/>
+                                    <constraint firstAttribute="trailing" secondItem="KOa-e1-u1B" secondAttribute="trailing" id="eEh-Ad-LJE"/>
+                                    <constraint firstItem="Po1-4p-SL0" firstAttribute="top" secondItem="Rti-uX-I8f" secondAttribute="bottom" constant="18" id="ffR-xe-YuT"/>
+                                    <constraint firstItem="Po1-4p-SL0" firstAttribute="trailing" secondItem="Rti-uX-I8f" secondAttribute="trailing" id="hIJ-5a-Tnj"/>
+                                    <constraint firstItem="Po1-4p-SL0" firstAttribute="leading" secondItem="Rti-uX-I8f" secondAttribute="leading" id="hSI-jo-Iuf"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Yd-P9-efP" secondAttribute="trailing" constant="20" id="kkJ-ta-xg0"/>
+                                    <constraint firstItem="oid-7u-7Wq" firstAttribute="leading" secondItem="x5i-7C-Scp" secondAttribute="leading" id="lOa-Ep-zD1"/>
+                                    <constraint firstAttribute="bottom" secondItem="pLP-Pu-a3R" secondAttribute="bottom" constant="30" id="oFE-Eg-Vx9"/>
+                                    <constraint firstItem="xsd-fX-frf" firstAttribute="leading" secondItem="fal-Bf-nM2" secondAttribute="leading" id="owb-QZ-r2L"/>
+                                    <constraint firstItem="oid-7u-7Wq" firstAttribute="trailing" secondItem="x5i-7C-Scp" secondAttribute="trailing" id="thx-uY-4xL"/>
+                                    <constraint firstItem="xsd-fX-frf" firstAttribute="top" secondItem="fal-Bf-nM2" secondAttribute="bottom" constant="5" id="uZq-14-wSa"/>
+                                    <constraint firstItem="fal-Bf-nM2" firstAttribute="top" secondItem="oid-7u-7Wq" secondAttribute="bottom" constant="5" id="wDT-VT-qqG"/>
+                                    <constraint firstItem="Rti-uX-I8f" firstAttribute="leading" secondItem="Lhc-9v-t8I" secondAttribute="leading" id="wGg-zz-AXf"/>
+                                    <constraint firstItem="pLP-Pu-a3R" firstAttribute="top" secondItem="xsd-fX-frf" secondAttribute="bottom" constant="18" id="wsi-KG-GMl"/>
+                                    <constraint firstItem="KOa-e1-u1B" firstAttribute="centerX" secondItem="jGZ-VX-gjw" secondAttribute="centerX" id="xhK-9u-M6r"/>
+                                    <constraint firstItem="x5i-7C-Scp" firstAttribute="top" secondItem="zPG-am-gbZ" secondAttribute="bottom" constant="18" id="xzl-Kl-ehH"/>
+                                    <constraint firstItem="zPG-am-gbZ" firstAttribute="trailing" secondItem="Po1-4p-SL0" secondAttribute="trailing" id="yX9-gC-hKI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jGZ-VX-gjw" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Iv0-b6-v6y"/>
+                            <constraint firstItem="jGZ-VX-gjw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Laf-zS-E92"/>
+                            <constraint firstAttribute="bottom" secondItem="jGZ-VX-gjw" secondAttribute="bottom" id="Qgp-Zw-m3e"/>
+                            <constraint firstItem="jGZ-VX-gjw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="urY-qo-NIC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkboxArma" destination="V4G-Km-SbU" id="fMQ-J9-lGO"/>
+                        <outlet property="checkboxTipoArma1" destination="y9L-ap-FPs" id="KmN-oC-VM1"/>
+                        <outlet property="checkboxTipoArma2" destination="F8w-O2-yLh" id="u3X-IA-udS"/>
+                        <outlet property="checkboxTipoArma3" destination="t6t-FA-Hbo" id="f2P-qS-0ln"/>
+                        <outlet property="factorDropDownView" destination="zPG-am-gbZ" id="kqF-Z0-4IS"/>
+                        <outlet property="factorDropdownButton" destination="r5S-kW-fjh" id="6eC-M1-xd5"/>
+                        <outlet property="factorLabel" destination="YKq-bB-K8b" id="Mlc-hZ-U0W"/>
+                        <outlet property="scrollView" destination="jGZ-VX-gjw" id="5p0-IG-vki"/>
+                        <outlet property="txfAsunto" destination="2qh-bS-5Ar" id="95a-rs-3Gp"/>
+                        <outlet property="txfDescripcion" destination="9CD-8S-qam" id="SJY-mH-XWY"/>
+                        <outlet property="txfPersonas" destination="Opr-YP-qzi" id="TaP-2e-ASw"/>
+                        <outlet property="txfTipoArmaOtros" destination="niQ-Dn-Fwg" id="huz-pm-Fae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.46153846153845" y="95.97156398104265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowtriangle.down" catalog="system" width="128" height="124"/>
+        <image name="check" width="24" height="25"/>
+        <image name="uncheck" width="24" height="25"/>
+        <namedColor name="PlomoInputs">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlomoPlaceholder">
+            <color red="0.77999997138977051" green="0.77999997138977051" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="VerdeBotones">
+            <color red="0.36500000953674316" green="0.68999999761581421" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

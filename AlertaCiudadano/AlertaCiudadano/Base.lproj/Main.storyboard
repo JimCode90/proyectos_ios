@@ -423,7 +423,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modificar Contraseña" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goW-Dt-9xw">
-                                <rect key="frame" x="116" y="196" width="182" height="82.333333333333314"/>
+                                <rect key="frame" x="116" y="196" width="182" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="8Ma-4L-NOc"/>
                                 </constraints>
@@ -432,7 +432,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-I9-M80">
-                                <rect key="frame" x="58" y="297.33333333333331" width="298" height="54"/>
+                                <rect key="frame" x="58" y="331" width="298" height="54"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-9h-vpA">
                                         <rect key="frame" x="8" y="10" width="223" height="34"/>
@@ -458,7 +458,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-mS-AqG">
-                                <rect key="frame" x="58" y="370.33333333333331" width="298" height="54"/>
+                                <rect key="frame" x="58" y="404" width="298" height="54"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qU0-mB-L4k">
                                         <rect key="frame" x="8" y="10" width="223" height="34"/>
@@ -484,7 +484,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHG-E9-4KR">
-                                <rect key="frame" x="58" y="443.33333333333331" width="298" height="49"/>
+                                <rect key="frame" x="58" y="477" width="298" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="6WI-rR-ukv"/>
                                     <constraint firstAttribute="height" constant="49" id="Ahs-dZ-o5U"/>
